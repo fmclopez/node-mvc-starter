@@ -30,3 +30,24 @@ exports.getAll = function(sort,next){
 });
 
 };
+
+exports.create = function(obj, next){
+  const student = new studentModel(obj);
+  student.save(function(err, student) {
+    next(err,student);
+  });
+};
+
+exports.search = function (pattern, next) {
+    studentModel.find(pattern, function(students) {
+      next(students);
+    });
+};
+
+exports.edit = function(query, update, next){
+    console.log(query);
+    console.log(update);
+    studentModel.findOneAndUpdate(query, update,  { new: true }, function(err,user){
+      next(err, user);
+    });
+};
