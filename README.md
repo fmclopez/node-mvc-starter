@@ -1,8 +1,8 @@
 # Screenshots
 
 # add
-![alt text](screens/added.png "ADD STUDENT")
+![alt text](screens/added.PNG "ADD STUDENT")
 # search
-![alt text](screens/found.png "SEARCH STUDENT")
+![alt text](screens/found.PNG "SEARCH STUDENT")
 # view
-![alt text](screens/list.png "VIEW STUDENTS LIST")
+![alt text](screens/list.PNG "VIEW STUDENTS LIST")
